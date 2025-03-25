@@ -1,0 +1,48 @@
+[
+    {
+        "title_en": "Ocean",
+        "title_cz": "Oceán",
+        "date": "1. 5. 2025",
+        "location_en": "Music Arena Palava",
+        "location_cz": "Music Aréna Pálava",
+        "image": "images/ocean_a4_2.jpg",
+        "description_en": "Come to a concert that Vinohrady has never experienced before! The legendary Czech band Oceán is embarking on their tour with a live performance of their first two released albums Dávná zem and Pyramida snů. Hits like Ráchel, Prázdná ulice, and more will be performed. Come and relive the beautiful intimate atmosphere of Czechoslovak Depeche Mode at the Pálava social hall in Brno's Vinohrady! After the concert, there will be a Depeche Mode party with the legendary Brno DJ Silent. Ticket sales will begin on Friday, March 14, 2025, at the KVIC office and through the smsticket network.",
+        "description_cz": "Přijďte na koncert, který Vinohrady ještě nezažily! Legendární česká kapela Oceán vyráží na své turné s koncertním vystoupením ke svým prvním dvěma vydaným albům Dávná zem a Pyramida snů. Zazní i takové hity, jako Ráchel, Prázdná ulice a další. Přijďte znovu zažít nádhernou komorní atmosféru československých Depeche Mode do společenského sálu Pálava na Brněnských Vinohradech! Po koncertě následuje Depeche Mode party s legendárním brněnským DJ Silent. Předprodej bude zahájen v pátek 14. 3. 2025 v kanceláři KVIC a v síti smsticket.",
+        "facebook_link": "https://fb.me/e/4G5OF1BDS"
+    },
+    {
+        "title_en": "Rock Oldies Live",
+        "title_cz": "Rock Oldies Live",
+        "date": "5. 4. 2025",
+        "location_en": "Brno Vinohrady",
+        "location_cz": "Brno Vinohrady",
+        "image": "images/rock_oldies.jpg",
+        "description_en": "Rock Oldies Live & Spring Barbecue at Vinohrady! Get ready for an evening of legendary rock music, great food, and unforgettable atmosphere at Brno's Vinohrady on Saturday, April 5, 2025, starting at 3:00 PM with a barbecue at the former ZŠ Bzenecká grounds. Enjoy live bands like Janis Joplin Revival, AvaroM DnaB SeuIB, and more, along with a spring barbecue (until 10:00 PM, free entry), beer specials from Pivovar Portáš and Pivovar Černá Hora, Modré vinařství, Cocktail bar, Merch & Vinyl shop, Rock Pub Quiz, and tickets available on SMSticket at a special pre-sale price. We look forward to seeing you!",
+        "description_cz": "Rock Oldies Live & Jarní Grilování na Vinohradech! Připravte se na večer plný legendární rockové hudby, skvělého jídla a nezapomenutelné atmosféry v Brněnských Vinohradech v sobotu 5. dubna 2025, začínající v 15:00 grilováním na bývalém areálu ZŠ Bzenecká. Užijte si živé kapely jako Janis Joplin Revival, AvaroM DnaB SeuIB a další, spolu s jarním grilováním (do 22:00, vstup zdarma), pivními speciály od Pivovaru Portáš a Pivovaru Černá Hora, Modré vinařství, Koktejlovým barem, Merch & Vinyl obchodem, Rock Pub Kvízem, a lístky k dispozici na SMSticket za výhodnou cenu v předprodeji. Těšíme se na vás!",
+        "facebook_link": "https://fb.me/e/4Exd9e3SW"
+    },
+    {
+        "title_en": "Rock Festival",
+        "title_cz": "Rockový Festival",
+        "date": "6. 8. 2025",
+        "location_en": "Prague Arena",
+        "location_cz": "Pražská Aréna",
+        "image": "images/rock_festival.jpg"
+    },
+    {
+        "title_en": "Metal Concert",
+        "title_cz": "Metalový Koncert",
+        "date": "20. 8. 2025",
+        "location_en": "Berlin Stadium",
+        "location_cz": "Berlínský Stadion",
+        "image": "images/metal_concert.jpg"
+    },
+    {
+        "title_en": "Indie Music Night",
+        "title_cz": "Indie Hudební Noc",
+        "date": "10. 9. 2025",
+        "location_en": "Vienna Hall",
+        "location_cz": "Vídeňská Hala",
+        "image": "images/indie_night.jpg"
+    }
+]

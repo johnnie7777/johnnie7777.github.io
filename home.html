@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jan Králík">
+    <meta name="description" content="Concerts and Events Informative Web">
+    <title>Dornych Star</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script src="script.js"></script>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="home.html" class="logo-link">
+                    <img src="images/dornychstar_logo.png" alt="Dornych Star Logo">
+                    <h1>Dornych Star</h1>
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <nav id="nav">
+                <ul>
+                    <li><a href="home.html" class="nav-link" data-lang="home">Home</a></li>
+                    <li><a href="events.html" class="nav-link" data-lang="events">Events</a></li>
+                    <li><a href="news.html" class="nav-link" data-lang="news">News</a></li>
+                    <li><a href="shop.html" class="nav-link" data-lang="shop">Shop</a></li>
+                    <li><a href="contact.html" class="nav-link" data-lang="contact">Contact</a></li>
+                    <li><a href="aboutus.html" class="nav-link" data-lang="aboutus">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <select id="language-select">
+                    <option value="en">EN</option>
+                    <option value="cz">CZ</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 data-lang="hero">Dornych Star Concerts</h1>
+            <!--<img src="images/hero.jpg" alt="hero image">-->
+        </section>
+        <section class="upcoming-events">
+            <h2 data-lang="upcomingevents">Upcoming Events</h2>
+            <div class="events-container" id="events-list">
+                <!-- Dynamic event items will be inserted here -->
+            </div>
+            <a href="events.html" class="show-more" data-lang="showmore">Show More</a>
+        </section>
+        
+        <section class="news-updates">
+            <h2 data-lang="news_updates">News & Updates</h2>
+            <div class="news-container" id="news-list">
+                <!-- Dynamic news items will be inserted here -->
+            </div>
+            <a href="news.html" class="show-more" data-lang="showmore">Show More</a>
+        </section>
+
+        <section class="shop-merch">
+            <h2 data-lang="shop_merchandise">Shop Merchandise</h2>
+            <div id="home-shop" class="shop-grid">
+                <!-- Dynamic shop items will be inserted here -->
+            </div>
+            <a href="shop.html" class="show-more" data-lang="showmore">Show More</a>
+        </section>
+        
+        <section class="photo-gallery">
+            <h2 data-lang="photo_highlights">Photo Highlights</h2>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                
+                <ul>
+                    <li>> Rock</li>
+                    <li>> Metal</li>
+                    <li>> Emo</li>
+                    <li>> Gothic</li>
+                    <li>> Punk</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Dornych Star</h3>
+                <ul>
+                    <li><a href="home.html" data-lang="home">Home</a></li>
+                    <li><a href="events.html" data-lang="events">Events</a></li>
+                    <li><a href="contact.html" data-lang="contact">Contact</a></li>
+                    <li><a href="shop.html" data-lang="shop">Shop</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-lang="contact">Kontakt</h3>
+                <p>E-mail: <a href="mailto:dibuce@seznam.cz">dibuce@seznam.cz</a></p>
+                <p data-lang="phonewnum">Telefon: 775 988 070</p>
+            </div>
+            <div class="footer-column">
+                <h3 data-lang="followus">Sledujte nás</h3>
+                <div class="footer-contact">
+                    <img src="images/facebook_logo_white.png" alt="Facebook Logo" class="footer-img">
+                    <a href="https://facebook.com/DORNYCHSTAR" target="_blank">Dornych Star</a>
+                </div>
+                <div class="footer-contact">
+                    <img src="images/instagram_logo_white.png" alt="Instagram Logo" class="footer-img">
+                    <a href="https://instagram.com/dornychstar" target="_blank">Dornych Star</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3 data-lang="conditions">Podmínky</h3>
+                <ul>
+                    <li><a href="#" data-lang="terms">Obchodní podmínky</a></li>
+                    <li><a href="#" data-lang="privacypolicy">Pravidla ochrany soukromí</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-lang="rights">&copy; 2025 Dornych Star. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="language.js"></script>
+</body>
+</html>
