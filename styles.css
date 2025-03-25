@@ -125,6 +125,7 @@
         font-size: 28px;
         color: white;
         cursor: pointer;
+	padding-right: 10px;
     }
 
     /* Mobile Navigation (Hidden by Default) */
