@@ -8,6 +8,8 @@
         color: white;
         min-height: 100vh;
         padding-top: 70px;
+        overflow-x: hidden;
+        max-width: 100%;
     }
 
     header {
@@ -31,7 +33,7 @@
     .header-content {
         display: flex;
         align-items: center;
-        width: 97%;
+        width: 95%;
         justify-content: space-between;
     }
 
@@ -98,7 +100,7 @@
     }
 
     .language-switcher {
-        margin-left: 20px;
+        margin-left: 30px;
     }
     
     #language-select {
@@ -127,6 +129,7 @@
 
     /* Mobile Navigation (Hidden by Default) */
     @media (max-width: 800px) {
+
         .menu-toggle {
             display: block;
         }
@@ -155,6 +158,11 @@
 
         nav.active {
             display: block;
+        }
+
+        .language-switcher {
+            margin-left: 10px;
+            margin-right: 20px;
         }
     }
 
@@ -278,11 +286,13 @@
 
     /* Sections */
     section {
-        width: 95%;
+        /*width: 95%;*/
+        max-width: 100%;
         margin: 20px auto;
         padding: 20px;
         background: #222;
         border-radius: 8px;
+        box-sizing: border-box;
     }
 
     .section-header {
@@ -374,11 +384,33 @@
         .event-grid {
             grid-template-columns: repeat(2, 1fr); /* 2 per row on smaller screens */
         }
+
+        .event-card {
+            max-width: 80%; /* Scale down */
+            font-size: 14px; /* Make text smaller */
+            padding: 1px; /* Reduce padding */
+        }
+    
+        .event-card img {
+            height: 150px; /* Reduce image height */
+            object-fit: cover;
+        }
     }
     /*for phones*/
     @media (max-width: 600px) { 
         .event-grid {
             grid-template-columns: repeat(1, 1fr); /* 1 per row on mobile */
+        }
+
+        .event-card {
+            max-width: 80%; /* Scale down */
+            font-size: 14px; /* Make text smaller */
+            padding: 1px; /* Reduce padding */
+        }
+    
+        .event-card img {
+            height: 150px; /* Reduce image height */
+            object-fit: cover;
         }
     }
 
@@ -390,8 +422,7 @@
         transition: transform 0.3s ease-in-out;
         cursor: pointer;
         overflow: hidden;
-        max-width: 600px;
-        min-width: 350px;
+        min-width: 300px;
         position: relative;
     }
 
@@ -508,13 +539,13 @@
     }
 
     /* Responsive adjustments */
-    @media (max-width: 950px) {
+    @media (max-width: 1200px) {
         .shop-grid {
             grid-template-columns: repeat(3, 1fr); /* 3 per row on tablets */
         }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 1050px) {
         .shop-grid {
             grid-template-columns: repeat(2, 1fr); /* 2 per row on small screens */
         }
@@ -665,6 +696,7 @@
     
         .home-images img {
             width: 100%;
+            height: auto;
         }
     
         /* Adjust Shop, News, and Events sections */
