@@ -133,6 +133,7 @@ function createEventCard(event, lang) {
     //showing expanded on click
     eventCard.addEventListener("click", function () {
         showExpandedEvent(event, lang);
+        //window.location.href = `event.html?eventId=${event.id}`;
     });
 
     return eventCard;
