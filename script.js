@@ -169,6 +169,7 @@ function showExpandedEvent(event, lang) {
         <p><strong>${lang === "en" ? "Location:" : "Místo:"}</strong> ${event[`location_${lang}`]}</p>
         <p>${event[`description_${lang}`] || ""}</p>
         ${event.facebook_link ? `<p><a href="${event.facebook_link}" target="_blank" ><strong>${lang === "en" ? "More Info" : "Více Info"}</strong></a></p>` : ""}
+        ${event.ticket_link ? `<p><a href="${event.ticket_link}" target="_blank" ><strong>${lang === "en" ? "Tickets" : "Lístky"}</strong></a></p>` : ""}
     `;
 
     const closeButton = document.createElement("button");
@@ -210,4 +211,37 @@ function createShopCard(item, lang) {
 document.addEventListener("DOMContentLoaded", function () {
     const language = localStorage.getItem("selectedLanguage") || "en";
     loadShop(language);
+});
+
+//GALLERY
+document.addEventListener("DOMContentLoaded", function () {
+    const gallery = document.getElementById("gallery");
+    const loadMoreBtn = document.getElementById("load-more");
+
+    const images = [ 
+        "images/rockoldies1.jpg", "images/rockoldiesstanek2.jpg", "images/kiss28325.jpg", "images/kiss28325_2.jpg", "images/acdc_28325.jpg", "images/stanek_28325.jpg", "images/stanek2_28325.jpg"
+    ]; // Add more paths as needed
+
+    let visibleCount = 8; // 2 rows (assuming 5 per row)
+    const imagesPerClick = 8;
+
+    function loadImages() {
+        gallery.innerHTML = ""; // Clear previous content
+        for (let i = 0; i < visibleCount && i < images.length; i++) {
+            let img = document.createElement("img");
+            img.src = images[i];
+            img.alt = `Gallery Image ${i + 1}`;
+            gallery.appendChild(img);
+        }
+        if (visibleCount >= images.length) {
+            loadMoreBtn.style.display = "none";
+        }
+    }
+
+    loadMoreBtn.addEventListener("click", function () {
+        visibleCount += imagesPerClick;
+        loadImages();
+    });
+
+    loadImages(); // Initial Load
 });

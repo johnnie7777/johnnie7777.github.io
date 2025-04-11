@@ -1,7 +1,7 @@
     body {
         display: flex;
         flex-direction: column;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         margin: 0;
         padding: 0;
         background-color: #121212;
@@ -357,9 +357,14 @@
         color: rgb(100, 100, 100);
         padding: 10px;
         margin-top: 20px;
+        margin-left: auto;
         border-radius: 5px;
         text-decoration: none;
         font-weight: bold;
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: inherit;
     }
 
     .show-more:hover {
@@ -575,6 +580,26 @@
 
     .shop-card:hover {
         transform: scale(1.05);
+    }
+
+    /*Gallery*/
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+        gap: 10px;
+        overflow: hidden;
+    }
+    
+    .gallery-container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    /* Smooth expansion when loading more */
+    .expanded {
+        max-height: none;
     }
 
     /* Contact */
